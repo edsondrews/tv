@@ -1,0 +1,16 @@
+/* assets/css/listar_clientes.css */
+.listar-clientes h1 {
+    text-align: center;
+}
+
+.listar-clientes .alert {
+    margin-bottom: 20px;
+}
+
+.listar-clientes .table {
+    margin-top: 20px;
+}
+
+.listar-clientes .btn {
+    margin-right: 5px;
+}

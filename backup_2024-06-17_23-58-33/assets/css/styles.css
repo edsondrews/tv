@@ -1,0 +1,314 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+}
+/* Adicione este conteúdo ao arquivo assets/css/styles.css */
+
+.titulo-detalhes-cliente {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.detalhes-cliente {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.detalhes-cliente p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.detalhes-cliente h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-footer {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.modal-footer .btn {
+    margin-left: 10px;
+}
+.vencido {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.vence-hoje {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.ativo {
+    background-color: #d4edda;
+    color: #155724;
+}
+.table-custom td, .table-custom th {
+    padding: .25rem;
+    vertical-align: middle;
+}
+.table-custom td {
+    white-space: nowrap;
+}
+.badge-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.badge-success {
+    background-color: #28a745;
+    color: white;
+}
+
+/* listar_servidores.php*/
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+.btn-voltar {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.login-container {
+    max-width: 50px;
+    width: 100%;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 16px;
+}
+
+.alert {
+    text-align: center;
+    margin-top: 10px;
+}
+/* Responsivo para celular - Pagina listar_pagamentos. */
+@media (max-width: 767px) {
+    .table-responsive { overflow-x: auto; }
+    .table thead { display: none; }
+    .table tbody td {
+        display: block;
+        text-align: right;
+        border-top: 1px solid #dee2e6;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-custom th, .table-custom td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Responsive Table */
+.table-custom {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table-custom th, .table-custom td {
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-custom th {
+    background-color: #e9ecef;
+}
+
+.table-custom td {
+    word-wrap: break-word;
+}
+
+.table-custom tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-custom tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+/* Column Adjustments */
+.table-custom th:nth-child(3), .table-custom td:nth-child(3) {
+    width: 90px; /* Adjusted for 'Vencimento' */
+}
+
+.table-custom th:nth-child(4), .table-custom td:nth-child(4) {
+    width: 70px; /* Adjusted for 'Status' */
+}
+
+.table-custom th:nth-child(5), .table-custom td:nth-child(5) {
+    width: 120px; /* Adjusted for 'Ações' */
+}
+
+/* Badge Styles */
+.badge-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.btn {
+    margin: 0 2px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    color: #007bff;
+    border: 1px solid #dee2e6;
+    margin: 0 2px;
+    padding: 5px 10px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+/* Search Bar */
+#buscarCliente {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Modal Styles */
+.modal .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal .form-group input,
+.modal .form-group select,
+.modal .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.modal .btn-primary {
+    width: 100%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .table-custom th:nth-child(3), .table-custom td:nth-child(3) {
+        width: auto;
+    }
+
+    .table-custom th:nth-child(4), .table-custom td:nth-child(4) {
+        width: auto;
+    }
+
+    .table-custom th:nth-child(5), .table-custom td:nth-child(5) {
+        width: auto;
+    }
+
+    .btn-sm {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .modal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .modal .modal-content {
+        padding: 20px;
+    }
+
+    .modal .form-group input,
+    .modal .form-group select,
+    .modal .form-group textarea {
+        padding: 8px;
+    }
+
+    .modal .btn-primary {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-custom th, .table-custom td {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+
+    .btn-sm {
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .pagination .page-item .page-link {
+        padding: 3px 8px;
+    }
+}
